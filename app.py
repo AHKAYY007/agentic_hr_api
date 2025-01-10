@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify #imports flask class from flask module
 from resume_ai import generate_summary
+import os
 
 
 
@@ -24,6 +25,10 @@ def chat():
     print(professional_summary)
     return jsonify(response)
 
+debug_val = False
+if os.getenv("PYTHON_ENV") == "development":
+    debug_val = True
+
 
 if __name__ == '__main__': #runs the app only if the script is executed directly
-    app.run(debug=True) #runs the app
+    app.run(debug=debug_val) #runs the app
