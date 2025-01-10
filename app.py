@@ -5,6 +5,10 @@ from resume_ai import generate_summary
 
 app = Flask(__name__) #creates an instance of the Flask class
 
+@app.route("/")
+def hello():
+    return "Hello, World!"
+
 @app.route('/chat', methods=['POST']) #python decorator that creates a route
 def chat():
     data = request.json
