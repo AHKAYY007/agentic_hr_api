@@ -1,12 +1,15 @@
-from flask import Flask, request, jsonify #imports flask class from flask module
+from flask import Flask, request, jsonify 
 from resume_ai import generate_summary
 from cover_letter_ai import generate_cover_letter
+from flask_cors import CORS
 
 import os
 
 
 
 app = Flask(__name__) #creates an instance of the Flask class
+CORS(app) # Enables CORS for all routes and origins
+
 
 @app.route("/coverletter", methods=['POST'])
 def cover_letter():
@@ -24,7 +27,7 @@ def cover_letter():
     return jsonify(response)
 
 
-@app.route('/chat', methods=['POST']) #python decorator that creates a route
+@app.route('/chat', methods=['POST']) 
 def chat():
     data = request.json
     user_input = data
