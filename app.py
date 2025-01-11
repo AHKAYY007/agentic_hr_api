@@ -1,14 +1,28 @@
 from flask import Flask, request, jsonify #imports flask class from flask module
 from resume_ai import generate_summary
+from cover_letter_ai import generate_cover_letter
+
 import os
 
 
 
 app = Flask(__name__) #creates an instance of the Flask class
 
-@app.route("/")
-def hello():
-    return "Hello, World!"
+@app.route("/coverletter", methods=['POST'])
+def cover_letter():
+    data = request.json
+    user_input = data
+
+    print(user_input)  
+    cover_letter = generate_cover_letter(f"{user_input}")
+
+    response = {
+        "cover_letter": cover_letter
+    }
+
+    print(cover_letter)
+    return jsonify(response)
+
 
 @app.route('/chat', methods=['POST']) #python decorator that creates a route
 def chat():
