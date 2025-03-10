@@ -6,7 +6,8 @@
 5. Demos
 6. Demo tutorials
 7. Project Repositories
-Presentation
+
+# Presentation
 Agentic HR: Revolutionizing the Job-Seeking Journey with AI-Powered Solutions
 Hey there👋, looks like you stumbled across this documentation wondering what it could be? It's a normal feeling🙂. Agentic HR is a state-of-the-art, AI-driven platform meticulously designed to redefine and elevate the job-seeking experience. By seamlessly combining advanced artificial intelligence with user-friendly, intuitive tools, Agentic HR empowers job seekers to achieve their career goals with efficiency and confidence.
 
@@ -26,8 +27,8 @@ Agentic HR isn’t just a tool; it’s a transformative ally for job seekers, de
 
 Kindly download the pdf presentation below
 
-Download
-Business Problem
+[Download](https://github.com/ukangaekom/agentic_hr/blob/main/presentation.pdf)
+# Business Problem
 Bridging the Talent Gap with Agentic HR: A Game-Changer for Modern Hiring Challenges
 The talent landscape today is fraught with inefficiencies. Talented professionals struggle to effectively showcase their skills, while employers find it challenging to discover the best candidates for their roles. This disconnect stems from two primary issues: the difficulty job seekers face in expressing their true potential on resumes and the lack of tools to match candidates to roles that align with their unique skills and career aspirations.
 
@@ -49,7 +50,7 @@ Why Agentic HR Matters Agentic HR’s solution addresses the root causes of inef
 
 For job seekers, this means improved chances of landing roles that truly match their expertise and career trajectory. For employers, it means access to a deeper pool of qualified, relevant talent, saving time and resources while improving hiring outcomes.
 
-Solution
+# Solution
 Agentic HR’s Technical Solution: Powered by Gemini AI for Seamless Talent Matching and Resume Generation
 To tackle the pressing challenges in today’s talent ecosystem, Agentic HR employs an advanced technical solution powered by Gemini AI, integrating a Telegram-based HR bot and a dedicated website for career-specific resume generation. These tools are designed to create a seamless, intelligent, and user-centric platform that bridges the gap between job seekers and recruiters.
 
@@ -87,7 +88,7 @@ Implements encryption and GDPR-compliant policies to ensure the confidentiality 
 
 The platform constantly improves its recommendations by learning from user interactions, feedback, and evolving job market trends.
 
-Project Architecture
+# Project Architecture
 The Architectural diagram below shows a visual representation of data flow in Agentic HR project.
 
 Agentic HR Architectural Diagram
@@ -96,7 +97,8 @@ Demo Video 1
 Demos
 BOT
 Website
-Project Repositories
-Agentic_Hr Bot
-Frontend
-Agentic_HR API
+# Project Repositories
+[Agentic_Hr Bot](https://t.me/hr_agentic_bot)
+[Frontend](https://github.com/AmDeeJhay/Agentic-HR)
+[Agentic_HR API]()
+
